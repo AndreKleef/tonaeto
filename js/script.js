@@ -1,6 +1,4 @@
 
-
-
 $(document).on('click', '.custom-input-number .cin-increment', function(e) {
   let $input = $(this).siblings('.cin-input'),
      val = parseInt($input.val()),
@@ -143,21 +141,6 @@ $(document).ready(function () {
     });
   }
 
-  $("#slider-range1").slider({
-    range: true,
-    min: 0,
-    max: 3000,
-    values: [75, 2500],
-    slide: function(event, ui) {
-      $("#min1").val(ui.values[0] + " ₽");
-      $("#max1").val(ui.values[1] + " ₽");
-    }
-   });
-   $("#min1").val($("#slider-range1").slider("values", 0) + " ₽");
-   $("#max1").val($("#slider-range1").slider("values", 1) + " ₽");
-
-
-
   if($("#map").length>0) {
     ymaps.ready(function() {
         var myMap = new ymaps.Map("map",{
@@ -235,27 +218,12 @@ let basketButton = document.querySelector('.page-header__block'),
     menuSort = document.querySelector('.sort__button'),
     navSort = document.querySelector('.sort__filter'),
 
-    lkPersonal = document.querySelector('.personal__button'),
-    lkPersonalMenu = document.querySelector('.personal__nav'),
-    linkPersonal = document.querySelectorAll('personal__link');
+    burgerButton = document.querySelector('.burger'),
+    burgerMenu = document.querySelector('.page-header__nav');
 
-basketButton.addEventListener('click', function() {
-  basketModal.classList.toggle('visible');
-});
-
-if (!modalCancel) {
-  modalCancel = null;
-} else {
-  modalCancel.forEach(el => {
-    el.addEventListener('click', function() {
-      basketModal.classList.remove('visible');
-    });
-  });
-};
-
-menuСontent.addEventListener('click', function() {
-  menuСontent.classList.toggle('active_menu');
-  navMenu.classList.toggle('openmenu');
+burgerButton.addEventListener('click', function() {
+  burgerButton.classList.toggle('activeburger');
+  burgerMenu.classList.toggle('openmenu');
 });
 
 lkPersonal.addEventListener('click', function() {

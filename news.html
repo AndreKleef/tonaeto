@@ -87,76 +87,131 @@
         </div>
       </div>
     </header>
-    <section class="promo">
-      <div class="promo__container container">
-        <h1 class="promo-title">Обновление объявлений в&nbsp;режиме онлайн</h1>
-      </div>
-      <div class="promo-image"></div>
-      <svg class="editorial" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
-        <defs>
-          <path id="gentle-wave"
-          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="50" y="0" fill="#fff"/>
-        </g>
-      </svg>
-    </section>
-    <section class="premium">
-      <div class="premium__container container">
-        <h2 class="premium-title title">Премиум-бартеры</h2>
-        <div class="premium__list">
-          <a class="premium__item" href="">
-            <div class="premium__image">
-              <img class="premium__image-pic" src="img/offer.jpg" alt="">
-            </div>
-            <div class="premium__hover">
-              <span class="premium__hover-text">Наведённый блок. Заголовок предложения</span>
-            </div>
-            <div class="premium__flag">
-              <span class="premium__flag-text">премиум</span>
-            </div>
-          </a>
-          <a class="premium__item" href="">
-            <div class="premium__image">
-              <img class="premium__image-pic" src="img/offer.jpg" alt="">
-            </div>
-            <div class="premium__hover">
-              <span class="premium__hover-text">Наведённый блок. Заголовок предложения</span>
-            </div>
-            <div class="premium__flag">
-              <span class="premium__flag-text">премиум</span>
-            </div>
-          </a>
-          <a class="premium__item" href="">
-            <div class="premium__image">
-              <img class="premium__image-pic" src="img/offer.jpg" alt="">
-            </div>
-            <div class="premium__hover">
-              <span class="premium__hover-text">Наведённый блок. Заголовок предложения</span>
-            </div>
-            <div class="premium__flag">
-              <span class="premium__flag-text">премиум</span>
-            </div>
-          </a>
+    <section class="broad">
+      <div class="broad__container container">
+        <div class="broad__block">
+          <a class="broad__block-text broad__block-last" href="#">Главная</a>
+          <a class="broad__block-text broad__block-active" href="#">Рубрики объявлений</a>
         </div>
       </div>
     </section>
-    <section class="about">
-      <div class="about__container container">
-        <h2 class="premium-title title">Премиум-бартеры</h2>
-        <p class="premium-text text">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
-          Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-          imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
-          Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-          porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
-          feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
-        </p>
+    <div class="news">
+      <div class="news__container container">
+        <div class="news-aside">
+          <h2 class="news-aside-title">Рубрики объявлений</h2>
+          <ul class="news__nav nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="news__nav-item nav-item">
+              <a class="news__nav-link nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Товары</a>
+            </li>
+            <li class="news__nav-item nav-item">
+              <a class="news__nav-link nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Услуги</a>
+            </li>
+          </ul>
+          <div class="news__tab-content tab-content" id="pills-tabContent">
+            <div class="news__tab-pane tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Автомобили, транспорт</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Бытовая химия</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Бытовая техника</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Игрушки детские</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Инструменты</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Косметика</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Мебель</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Медицинские товары</span>
+              </label>
+            </div>
+            <div class="news__tab-pane tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Автомобили, транспорт</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Бытовая химия</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Бытовая техника</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Игрушки детские</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Инструменты</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Косметика</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Мебель</span>
+              </label>
+              <label class="sort__first_item as_form__agree">
+                <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+                <input class="as_form__checkbox" type="radio" name="consent1">
+                <span class="as_form__checkbox-custom"></span>
+                <span class="as_form__check">Медицинские товары</span>
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
     <footer class="page-footer">
       <svg class="editorial editorial_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
