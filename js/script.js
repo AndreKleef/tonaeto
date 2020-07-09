@@ -21,54 +21,15 @@ $(document).on('click', '.custom-input-number .cin-increment', function(e) {
   // console.log(temp);
 });
 
-
-//search
-// let search = $('.search__triger div');
-// search.on('click', function(){
-//    if($('.search_input').val() != ''){
-//       $('.search_input').addClass('search_input__active');
-//       $('.page-header__search')[0].submit();
-//       $('.search_input').val('');
-//    }else{
-//       $('.search_input').toggleClass('search_input__active');
-//    }
-// });
-
-//sliders
-
 $(document).ready(function () {
-  $(".detail__qwe").owlCarousel({
-		loop:true,
-		items:1,
-		margin:0,
-		stagePadding: 0,
-		autoplay:false
-	});
+  $(".star label").click(function(){
+    $(this).parent().find("label").css({"color": "#F7DB39"});
+    $(this).css({"color": "#F7DB39"});
+    $(this).nextAll().css({"color": "#F7DB39"});
+    $(this).css({"background-color": "transparent"});
+    $(this).nextAll().css({"background-color": "transparent"});
+  });
 
-	dotcount = 1;
-
-	$('.owl-dot').each(function() {
-		$( this ).addClass( 'dotnumber' + dotcount);
-		$( this ).attr('data-info', dotcount);
-		dotcount=dotcount+1;
-	});
-
-	slidecount = 1;
-
-	$('.owl-item').not('.cloned').each(function() {
-		$( this ).addClass( 'slidenumber' + slidecount);
-		slidecount=slidecount+1;
-	});
-
-	$('.owl-dot').each(function() {
-		grab = $(this).data('info');
-		slidegrab = $('.slidenumber'+ grab +' img').attr('src');
-		$(this).css("background-image", "url("+slidegrab+")");
-	});
-
-	amount = $('.owl-dot').length;
-	gotowidth = 100/amount;
-	$('.owl-dot').css("height", gotowidth+"%");
 
   $('.promo__slider').owlCarousel({
     animateOut: 'slideOutDown',
@@ -215,8 +176,8 @@ let basketButton = document.querySelector('.page-header__block'),
     menuСontent = document.querySelector('.page-header__bottom-button'),
     navMenu = document.querySelector('.promo__menu'),
 
-    menuSort = document.querySelector('.sort__button'),
-    navSort = document.querySelector('.sort__filter'),
+    buttonFilter = document.querySelector('.news-content__filter-button'),
+    contentFilter = document.querySelector('.news-content__feedback'),
 
     burgerButton = document.querySelector('.burger'),
     burgerMenu = document.querySelector('.page-header__nav');
@@ -226,9 +187,9 @@ burgerButton.addEventListener('click', function() {
   burgerMenu.classList.toggle('openmenu');
 });
 
-lkPersonal.addEventListener('click', function() {
-  lkPersonal.classList.toggle('active_menu');
-  lkPersonalMenu.classList.toggle('openmenu');
+buttonFilter.addEventListener('click', function() {
+  buttonFilter.classList.toggle('active');
+  contentFilter.classList.toggle('opencontent');
 });
 
 menuSort.addEventListener('click', function() {

@@ -61,7 +61,7 @@
               </div>
               <input class="page-header__block-input" type="text" placeholder="Поиск по объявлениям">
               <div class="page-header__form-city c-dropdown js-dropdown">
-                <input type="hidden" name="Framework" id="Framework" class="js-dropdown__input">
+                <input type="hidden" name="Framework_1" id="Framework_1" class="js-dropdown__input">
                 <span class="c-button c-button--dropdown js-dropdown__current">Город</span>
                 <ul class="c-dropdown__list">
                   <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
@@ -95,7 +95,7 @@
         </div>
       </div>
     </section>
-    <div class="news">
+    <section class="news">
       <div class="news__container container">
         <div class="news-aside">
           <h2 class="news-aside-title">Рубрики объявлений</h2>
@@ -210,8 +210,135 @@
             </div>
           </div>
         </div>
+        <div class="news-content">
+          <h2 class="news-aside-title">Объявления выбранной категории</h2>
+          <div class="news-content__filter">
+            <div class="news-content__filter-button">
+              <div class="news-content__filter-button_icon"></div>
+            </div>
+            <span class="news-content__filter-text">Фильтры</span>
+          </div>
+          <div class="news-content__inputs">
+            <form class="news-content__feedback">
+              <div class="news-content__form-city c-dropdown js-dropdown">
+                <input type="hidden" name="Framework_4" id="Framework_4" class="js-dropdown__input">
+                <span class="c-button c-button--dropdown js-dropdown__current">Город</span>
+                <ul class="c-dropdown__list">
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                </ul>
+              </div>
+              <div class="news-content__form c-dropdown js-dropdown">
+                <input type="hidden" name="Framework_2" id="Framework_2" class="js-dropdown__input">
+                <span class="news-content__form-category c-button c-button--dropdown js-dropdown__current">Тип объявления</span>
+                <ul class="c-dropdown__list">
+                  <li class="c-dropdown__item" data-dropdown-value="value">Категория 1</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Категория 2</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Категория 3</li>
+                </ul>
+              </div>
+              <div class="news-content__form-city c-dropdown js-dropdown">
+                <input type="hidden" name="Framework_3" id="Framework_3" class="js-dropdown__input">
+                <span class="c-button c-button--dropdown js-dropdown__current">Макс. оценка</span>
+                <ul class="c-dropdown__list">
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Мурманск</li>
+                  <li class="c-dropdown__item" data-dropdown-value="value">Саратов</li>
+                </ul>
+              </div>
+            </form>
+            <label class="sort__first_item as_form__agree">
+              <input class="as_form__checkbox-hidden" type="hidden" name="consent1" value="">
+              <input class="as_form__checkbox" type="checkbox" name="consent1">
+              <span class="as_form__checkbox-custom"></span>
+              <span class="as_form__check">Показывать только объявления подтвержденных пользователей</span>
+            </label>
+          </div>
+          <div class="news-content__catalog">
+            <div class="news-content__item">
+              <div class="news-content__top">
+                <div class="news-content__image">
+                  <img class="news-content__image-pic" src="img/offer.jpg" alt="">
+                </div>
+                <a class="news-content__top-title" href="">Заголовок объявления пользователя. Возможно, в 2 строки.</a>
+              </div>
+              <div class="news-content__bottom">
+                <div class="news-content__info">
+                  <p class="news-content__info-text">Город: Саратов</p>
+                  <p class="news-content__info-text">Вид объявления</p>
+                  <p class="news-content__info-text">Размещено: 26.05.2020 г.</p>
+                </div>
+                <div class="news-content__bottom-heart"></div>
+              </div>
+            </div>
+            <div class="news-content__item">
+              <div class="news-content__top">
+                <div class="news-content__image">
+                  <img class="news-content__image-pic" src="img/offer.jpg" alt="">
+                </div>
+                <a class="news-content__top-title" href="">Заголовок объявления пользователя. Возможно, в 2 строки.</a>
+              </div>
+              <div class="news-content__bottom">
+                <div class="news-content__info">
+                  <p class="news-content__info-text">Город: Саратов</p>
+                  <p class="news-content__info-text">Вид объявления</p>
+                  <p class="news-content__info-text">Размещено: 26.05.2020 г.</p>
+                </div>
+                <div class="news-content__bottom-heart"></div>
+              </div>
+            </div>
+            <div class="news-content__item">
+              <div class="news-content__top">
+                <div class="news-content__image">
+                  <img class="news-content__image-pic" src="img/offer.jpg" alt="">
+                </div>
+                <a class="news-content__top-title" href="">Заголовок объявления пользователя. Возможно, в 2 строки.</a>
+              </div>
+              <div class="news-content__bottom">
+                <div class="news-content__info">
+                  <p class="news-content__info-text">Город: Саратов</p>
+                  <p class="news-content__info-text">Вид объявления</p>
+                  <p class="news-content__info-text">Размещено: 26.05.2020 г.</p>
+                </div>
+                <div class="news-content__bottom-heart"></div>
+              </div>
+            </div>
+          </div>
+          <ul class="news-content__pagination">
+            <li class="news-content__arrow">
+              <a class="news-content__arrow-text news-content__arrow-text_left" href=""></a>
+            </li>
+            <li class="news-content__page">
+              <a class="news-content__page-text" href="">1</a>
+            </li>
+            <li class="news-content__page active">
+              <a class="news-content__page-text" href="">2</a>
+            </li>
+            <li class="news-content__page">
+              <a class="news-content__page-text" href="">3</a>
+            </li>
+            <li class="news-content__page">
+              <a class="news-content__page-text" href="">...</a>
+            </li>
+            <li class="news-content__page">
+              <a class="news-content__page-text" href="">12</a>
+            </li>
+            <li class="news-content__arrow">
+              <a class="news-content__arrow-text news-content__arrow-text_right" href=""></a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </section>
     <footer class="page-footer">
       <svg class="editorial editorial_footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none">
         <defs>
