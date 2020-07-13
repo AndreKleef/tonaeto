@@ -101,42 +101,81 @@
         <p class="help-text text">Если Вам необходима помощь в поиске предмета для бартерного обмена и дальнейшего
           сопровождения сделки - Вы можете оставить заявку и наш менеджер свяжется с Вами удобным для Вас способом.
         </p>
-        <form class="help__form">
+        <div class="registration__nav tabs-nav">
+          <div class="registration-nav__item is-active" data-tab-name="tab-1">
+            <div class="registration-nav__button">
+              <div class="registration-nav__button-radio"></div>
+              <span class="registration-nav__button-text">Физическое лицо</span>
+            </div>
+          </div>
+          <div class="registration-nav__item" data-tab-name="tab-2">
+            <div class="registration-nav__button">
+              <div class="registration-nav__button-radio"></div>
+              <span class="registration-nav__button-text">Юридическое лицо</span>
+            </div>
+          </div>
+        </div>
+        <div class="registration__content">
+          <div class="registration__content__tab tab is-active tab-1">
+            <form class="help__form">
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_1">Ваше Ф.И.О.</label>
+                <input class="help__item-input" id="help__item-input_1" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_2">Номер телефона</label>
+                <input class="help__item-input" id="help__item-input_2" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_3">E-mail</label>
+                <input class="help__item-input" id="help__item-input_3" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_4">Город</label>
+                <input class="help__item-input" id="help__item-input_4" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_5">Пароль</label>
+                <input class="help__item-input" id="help__item-input_5" type="password" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_6">Повторите пароль</label>
+                <input class="help__item-input" id="help__item-input_6" type="password" placeholder="12345">
+              </div>
+              <button class="help__item-button button">Оставить заявку</button>
+            </form>
+          </div>
+          <div class="registration__content__tab tab tab-2">
+            <form class="help__form">
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_9">Ваше Ф.И.О.</label>
+                <input class="help__item-input" id="help__item-input_9" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_10">Номер телефона</label>
+                <input class="help__item-input" id="help__item-input_10" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_11">E-mail</label>
+                <input class="help__item-input" id="help__item-input_11" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_12">Город</label>
+                <input class="help__item-input" id="help__item-input_12" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_13">Пароль</label>
+                <input class="help__item-input" id="help__item-input_13" type="text" placeholder="12345">
+              </div>
+              <div class="help__item">
+                <label class="help__item-label" for="help__item-input_14">Повторите пароль</label>
+                <input class="help__item-input" id="help__item-input_14" type="text" placeholder="12345">
+              </div>
+              <button class="help__item-button button">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
 
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_1">Ваше Ф.И.О.</label>
-            <input class="help__item-input" id="help__item-input_1" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_2">Номер телефона</label>
-            <input class="help__item-input" id="help__item-input_2" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_3">E-mail</label>
-            <input class="help__item-input" id="help__item-input_3" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_4">Товар/услуга для обмена</label>
-            <input class="help__item-input" id="help__item-input_4" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_5">На что хотите обменять?</label>
-            <input class="help__item-input" id="help__item-input_5" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_6">Город проведения сделки</label>
-            <input class="help__item-input" id="help__item-input_6" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_7">Ваши пожелания</label>
-            <input class="help__item-input" id="help__item-input_7" type="text" placeholder="12345">
-          </div>
-          <div class="help__item">
-            <label class="help__item-label" for="help__item-input_8">Логин на портале</label>
-            <input class="help__item-input" id="help__item-input_8" type="text" placeholder="12345">
-          </div>
-          <button class="help__item-button button">Оставить заявку</button>
-        </form>
       </div>
 
     </section>
